@@ -1,0 +1,12 @@
+.partner-area {
+    background: #ddd;
+
+    .partner {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+
+        img {
+            max-width: 140px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.footer-area {
+    background: #333;
+    color: #fff;
+
+    p {
+        margin-top: 10px;
+    }
+
+    a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 18px;
+
+        &:hover {
+            color: #ff7720;
+        }
+    }
+}

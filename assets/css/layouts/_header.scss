@@ -1,0 +1,39 @@
+.header-area {
+    padding: 20px;
+
+    .header {
+        display: grid;
+        grid-template-columns: 15% 80%;
+        column-gap: 5%;
+        align-items: center;
+
+        .logo {
+            a {
+                font-size: 35px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        .menu {
+            ul {
+                display: flex;
+                justify-content: end;
+
+                li {
+                    a {
+                        margin-left: 20px;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        display: block;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: #ff7720;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.counter-area {
+    @include bg;
+
+    .counter {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        align-items: center;
+        column-gap: 30px;
+
+        .single-counter {
+            color: #fff;
+            text-align: center;
+
+            i {
+                font-size: 25px;
+            }
+
+            h4 {
+                font-size: 20px;
+                text-transform: capitalize;
+                margin: -5px;
+
+                span {
+                    display: block;
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
