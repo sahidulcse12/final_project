@@ -1,5 +1,15 @@
 .header-area {
-    padding: 20px;
+    padding: 25px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: 0.3s;
+
+    &.sticky {
+        background: #333;
+        padding: 20px 0;
+    }
 
     .header {
         display: grid;
@@ -12,6 +22,7 @@
                 font-size: 35px;
                 font-weight: 700;
                 text-transform: uppercase;
+                color: #fff;
             }
         }
 
@@ -21,12 +32,19 @@
                 justify-content: end;
 
                 li {
+                    &.current {
+                        a {
+                            color: #ff7720;
+                        }
+                    }
+
                     a {
                         margin-left: 20px;
                         font-size: 20px;
                         text-transform: capitalize;
                         display: block;
                         transition: 0.3s;
+                        color: #fff;
 
                         &:hover {
                             color: #ff7720;

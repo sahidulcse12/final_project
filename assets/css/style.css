@@ -308,7 +308,18 @@ p {
 }
 
 .header-area {
-  padding: 20px;
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-area.sticky {
+  background: #333;
+  padding: 20px 0;
 }
 
 .header-area .header {
@@ -327,6 +338,7 @@ p {
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .header-area .header .menu ul {
@@ -338,6 +350,10 @@ p {
           justify-content: end;
 }
 
+.header-area .header .menu ul li.current a {
+  color: #ff7720;
+}
+
 .header-area .header .menu ul li a {
   margin-left: 20px;
   font-size: 20px;
@@ -345,6 +361,7 @@ p {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #fff;
 }
 
 .header-area .header .menu ul li a:hover {
@@ -843,7 +860,11 @@ p {
   width: 600px;
 }
 
-.video-area .video i {
+.video-area .video a {
+  color: #fff;
+}
+
+.video-area .video a i {
   font-size: 35px;
   cursor: pointer;
 }
